@@ -80,13 +80,6 @@
             <artifactId>spring-dotenv</artifactId>
             <version>4.0.0</version>
         </dependency>
-        <!-- Tencent Cloud Java SDK: Hunyuan models are provided under the com.tencentcloudapi.* packages.
-             Adjust the version if needed. If you prefer not to use the SDK, replace HunyuanAiClient with an HTTP client implementation. -->
-        <dependency>
-            <groupId>com.tencentcloudapi</groupId>
-            <artifactId>tencentcloud-sdk-java</artifactId>
-            <version>4.0.882</version>
-        </dependency>
     </dependencies>
 
     <build>

@@ -65,7 +65,7 @@ public class SchemaService {
             // 选取前3个作为 few-shot
             fewShotExamplesStr = allGoldensqlData.stream()
                     .limit(3)
-                    .map(example -> "### Question:\n" + example.get("question", "N/A") + "\n### SQL Query:\n" + example.get("sql", "N/A"))
+                    .map(example -> "### Question:\n" + example.getOrDefault("question", "N/A") + "\n### SQL Query:\n" + example.getOrDefault("sql", "N/A"))
                     .collect(Collectors.joining("\n\n"));
             System.out.println("SchemaService: Loaded few-shot examples from goldensql.json");
 
